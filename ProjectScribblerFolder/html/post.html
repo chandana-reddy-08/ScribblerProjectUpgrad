@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Posts</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="../styles/common.css">
+        <link rel="stylesheet" href="../styles/post.css">
+
+    </head>
+    <body>
+        <div>
+          <header>
+            <h1>ScriBBler</h1>
+            <h3>Explore, Imagine, Create</h3>
+            <button class="subbtn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                  <div class="modal-content" id="signUpForm" >
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="a-form">
+                            <div class="mb-3">
+                                <label id="name" for="exampleInputEmail1" class="form-label">Name</label>
+                                <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                 </div>
+                                 <div class="mb-3">
+                                    <label id="userName" for="exampleInputEmail1" class="form-label">Username</label>
+                                    <input type="text" placeholder="Enter your username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                     </div>
+                            <div class="mb-3">
+                              <label id="password" for="exampleInputEmail1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter your password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                               </div>
+                            <div class="mb-3">
+                              <label id="confirmPwd" for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                              <input type="password" placeholder="Re-enter your password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <button id="modalButton" type="submit" class="btn btn-primary" style="width: 467px;">Sign Up</button>
+                          </form>
+                          <div id="errorMessage" style="display: none; color: red;"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <button class="subbtn2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign In</button>
+
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                  <div class="modal-content" id="signInForm">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Welcome Back</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="a-form1">
+                            <div class="mb-3">
+                              <label id="userName" for="exampleInputEmail1" class="form-label">Username</label>
+                              <input type="text" placeholder="Enter your username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                               </div>
+                            <div class="mb-3">
+                              <label id="password" for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter your password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <button id="modalButton" type="submit" class="btn btn-primary" style="width: 467px;">Sign In</button>
+                            <div>
+                                <p style=" display: flex; flex-direction: row; justify-content: center; align-items: center; margin: 3px;" >Not a member?<a data-bs-target="#exampleModal" data-bs-dismiss="modal" data-bs-toggle="modal" href="index.html">Sign Up</a></p>
+                            </div>
+
+                          </form>
+                          <div id="errorMessage1" style="display: none; color: red;"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+
+
+
+        </header>
+         </div>
+         <div class="postDivision">
+            <article class="postCreation">
+            <h5 class="post-heading">Everything you should know about ‘module’ & ‘require’ in Node.js</h6>
+            <h6 class="user-Name">Srishti Gupta  <button class="edit-button">Edit<i class="fa-solid fa-pen-to-square"></i></button> <button class="save-button">Save <i class="fa-solid fa-floppy-disk"></i></button> </h6>
+            
+            <p class="post-content">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                named xyz. You can think of the require module as the command and the module module as the organizer of all required modules. Requiring a module in Node isn't that complicated of a concept. const config = require('/path/to/file'); The main object exported by the require module is a function (as used in the above example).</p>
+            </article>
+
+
+            <div id="merge">   
+              <div class="likeBlogButton">    
+              <!--Create the like button here-->
+              <button id="likeBlog"> <i class="fa-regular fa-thumbs-up"></i>Like</button>
+              <p id="likeCount"  onclick="LikeButton(userComments)">Be the first one to like this!</p>
+              <button class="liked-button"> <i class="fa-solid fa-thumbs-up"></i> Liked!</button>
+              </div>
+              
+              </div> 
+              <textarea name="textarea" id="userComments" placeholder="Add your comments" cols="30" rows="3" class="form-control" required></textarea>
+              <button id="addList" onclick="addComments(userComments)">Comment</button>
+              
+              <p style="margin-top: 5px;">All comments</p>
+              <section>
+              <div style="background-color: lightgrey;">
+              <div id="addEventNames" style="background-color: white; margin-bottom: 10px;" ></div>
+              </div>
+            </section>
+                  
+
+              <!--2nd post-->
+
+              <article class="postCreation">
+              <h5 class="post-heading1"   style="font-size: 24px; font-weight: bold; display: flex;flex-direction: column; justify-content: center; align-items: center;margin: 0;">How to write easily describable code</h6>
+              <h6 class="user-Name" >Cedd Burge  <button class="edit-button1" style=" background-color: red; position: relative;top: 2px; left: 950px;">Edit<i class="fa-solid fa-pen-to-square"></i></button> <button class="save-button1" style="background-color: red; position: relative;  top: 2px; left: 940px; display: none;">Save <i class="fa-solid fa-floppy-disk"></i></button> </h6>
+              
+              <p class="post-content1" style="font-size: 16px; line-height: 1.5; margin: 0;">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+              leads to confusion when discussing the code.</p>
+              </article>
+  
+  
+              <div id="merge">   
+                <div class="likeBlogButton">    
+                
+                <button id="likeBlog1" style="display: inline;background-color: red; width: 90px; margin: 2px;"> <i class="fa-regular fa-thumbs-up"></i>Like</button>
+                <p id="likeCount1"  onclick="LikeButton1(userComments1)" style=" background-color: white; color: black; padding: 0 10px 0 0; width: 100%;">Be the first one to like this!</p>
+                <button class="liked-button1" style="display: inline; background-color: red; width: 90px; display: none;"> <i class="fa-solid fa-thumbs-up"></i> Liked!</button>
+                </div>
+                
+                </div> 
+                <textarea name="textarea" id="userComments1" placeholder="Add your comments" cols="30" rows="3" class="form-control" required></textarea>
+                <button id="addList1" onclick="addComments1(userComments1)" style="display: inline;background-color: red; width: 100px;margin-top: 6px;">Comment</button>
+                
+                <p style="margin-top: 5px;">All comments</p>
+                <section>
+                <div style="background-color: lightgrey;">
+                <div id="addEventNames1" style="background-color: white; margin-bottom: 10px; margin-top: 8px;" ></div>
+                </div>
+              </section>
+
+              <!--3rd post-->
+
+              <article class="postCreation">
+                <h5 class="post-heading2"   style="font-size: 24px; font-weight: bold; display: flex;flex-direction: column; justify-content: center; align-items: center;margin: 0;">How to Get More Views on Your Tech Blog</h6>
+                <h6 class="user-Name" >Yazeed Bzadough   <button class="edit-button2" style=" background-color: red; position: relative;top: 2px; left: 900px;">Edit<i class="fa-solid fa-pen-to-square"></i></button> <button class="save-button2" style="background-color: red; position: relative;  top: 2px; left: 900px; display: none;">Save <i class="fa-solid fa-floppy-disk"></i></button> </h6>
+                
+                <p class="post-content2" style="font-size: 16px; line-height: 1.5; margin: 0;">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                </article>
+    
+    
+                <div id="merge">   
+                  <div class="likeBlogButton">    
+                  
+                  <button id="likeBlog2" style="display: inline;background-color: red; width: 90px; margin: 2px;"> <i class="fa-regular fa-thumbs-up"></i>Like</button>
+                  <p id="likeCount2"  onclick="LikeButton2(userComments2)" style=" background-color: white; color: black; padding: 0 10px 0 0; width: 100%;">Be the first one to like this!</p>
+                  <button class="liked-button2" style="display: inline; background-color: red; width: 90px; display: none;"> <i class="fa-solid fa-thumbs-up"></i> Liked!</button>
+                  </div>
+                  
+                  </div> 
+                  <textarea name="textarea" id="userComments2" placeholder="Add your comments" cols="30" rows="3" class="form-control" required></textarea>
+                  <button id="addList2" onclick="addComments2(userComments2)" style="display: inline;background-color: red; width: 100px;margin-top: 6px;">Comment</button>
+                  
+                  <p style="margin-top: 5px;">All comments</p>
+                  <section>
+                  <div style="background-color: lightgrey;">
+                  <div id="addEventNames2" style="background-color: white; margin-bottom: 10px; margin-top: 8px;" ></div>
+                  </div>
+                </section>
+
+
+                <!--4th post-->
+
+                <article class="postCreation">
+                  <h5 class="post-heading3"   style="font-size: 24px; font-weight: bold; display: flex;flex-direction: column; justify-content: center; align-items: center;margin: 0;">What is linting and how can it save you time?</h6>
+                  <h6 class="user-Name" >Colby Fayock <button class="edit-button3" style=" background-color: red; position: relative;top: 2px; left: 950px;">Edit<i class="fa-solid fa-pen-to-square"></i></button> <button class="save-button3" style="background-color: red; position: relative;  top: 2px; left: 940px; display: none;">Save <i class="fa-solid fa-floppy-disk"></i></button> </h6>
+                  
+                  <p class="post-content3" style="font-size: 16px; line-height: 1.5; margin: 0;">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                  </article>
+      
+      
+                  <div id="merge">   
+                    <div class="likeBlogButton">    
+                    
+                    <button id="likeBlog3" style="display: inline;background-color: red; width: 90px; margin: 2px;"> <i class="fa-regular fa-thumbs-up"></i>Like</button>
+                    <p id="likeCount3"  onclick="LikeButton3(userComments3)" style=" background-color: white; color: black; padding: 0 10px 0 0; width: 100%;">Be the first one to like this!</p>
+                    <button class="liked-button3" style="display: inline; background-color: red; width: 90px; display: none;"> <i class="fa-solid fa-thumbs-up"></i> Liked!</button>
+                    </div>
+                    
+                    </div> 
+                    <textarea name="textarea" id="userComments3" placeholder="Add your comments" cols="30" rows="3" class="form-control" required></textarea>
+                    <button id="addList3" onclick="addComments3(userComments3)" style="display: inline;background-color: red; width: 100px;margin-top: 6px;">Comment</button>
+                    
+                    <p style="margin-top: 5px;">All comments</p>
+                    <section>
+                    <div style="background-color: lightgrey;">
+                    <div id="addEventNames3" style="background-color: white; margin-bottom: 10px; margin-top: 8px;" ></div>
+                    </div>
+                  </section>
+
+                  <!--5th post-->
+
+                  <article class="postCreation">
+                    <h5 class="post-heading4"   style="font-size: 24px; font-weight: bold; display: flex;flex-direction: column; justify-content: center; align-items: center;margin: 0;">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h6>
+                    <h6 class="user-Name" >Srishti Gupta   <button class="edit-button4" style=" background-color: red; position: relative;top: 2px; left: 950px;">Edit<i class="fa-solid fa-pen-to-square"></i></button> <button class="save-button4" style="background-color: red; position: relative;  top: 2px; left: 940px; display: none;">Save <i class="fa-solid fa-floppy-disk"></i></button> </h6>
+                    
+                    <p class="post-content4" style="font-size: 16px; line-height: 1.5; margin: 0;">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                    </article>
+        
+        
+                    <div id="merge">   
+                      <div class="likeBlogButton">    
+                      
+                      <button id="likeBlog4" style="display: inline;background-color: red; width: 90px; margin: 2px;"> <i class="fa-regular fa-thumbs-up"></i>Like</button>
+                      <p id="likeCount4"  onclick="LikeButton4(userComments4)" style=" background-color: white; color: black; padding: 0 10px 0 0; width: 100%;">Be the first one to like this!</p>
+                      <button class="liked-button4" style="display: inline; background-color: red; width: 90px; display: none;"> <i class="fa-solid fa-thumbs-up"></i> Liked!</button>
+                      </div>
+                      
+                      </div> 
+                      <textarea name="textarea" id="userComments4" placeholder="Add your comments" cols="30" rows="3" class="form-control" required></textarea>
+                      <button id="addList4" onclick="addComments4(userComments4)" style="display: inline;background-color: red; width: 100px;margin-top: 6px;">Comment</button>
+                      
+                      <p style="margin-top: 5px;">All comments</p>
+                      <section>
+                      <div style="background-color: lightgrey;">
+                      <div id="addEventNames4" style="background-color: white; margin-bottom: 10px; margin-top: 8px;" ></div>
+                      </div>
+                    </section>
+      
+    
+
+          </div>
+           
+          
+
+         <script src="../script/post.js"></script>
+    </body>
+</html>
